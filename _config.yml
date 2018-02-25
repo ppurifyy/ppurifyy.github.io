@@ -24,7 +24,7 @@ github_username:  ppurifyy
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: 
 plugins:
   - jekyll-feed
 
