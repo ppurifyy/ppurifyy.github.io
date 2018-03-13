@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
   <meta charset="ut-8"/>
   <meta name="description" content="KOREA,AUSTRALIA_Beauty,Food,Photography">
   <meta name="author" content="rlawjdghk329@gmail.com">
@@ -19,18 +18,33 @@
       padding: 0;
 
     }
+    html { 
+    background: url(images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   </style>
 <!-- 배경이미지 -->
   <style type="text/css">
-  div {
-    border: 0px solid #000000;
-    -moz-box-sizing: border-box; /* Firefox  */
-    -webkit-box-sizing: border-box; /* Safari */
-    box-sizing: border-box; /* CSS3 Standard */}
-  div#box {
-    height: 100%;
-    background-image: "ppurifyy.github.io/image/topnavbg1.jpg";
-  }
+  #bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+  #bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
   </style>
  <!-- 베너 -->
   <style type="text/css">
@@ -132,8 +146,9 @@
 </head>
 <body>
 <!-- 배경이미지 -->
-    <div id="box">
-    </div>
+  <div id="bg">
+    <img src="ppurifyy.github.io/images/topnavbg1.jpg">
+  </div>
 <!-- 베너 -->
   <div>
     <a href="#">
