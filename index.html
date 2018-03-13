@@ -23,28 +23,11 @@
 <!-- 배경이미지 -->
   <style type="text/css">
   #box_1 {
+    position: absolute; top:0; left: 0;
     width: 100%;
-    background-image: url(ppurifyy.github.io/image/topnavbg1.jpg);
-    background-size: cover;
-    overflow: scroll;
-    position: absolute;
-    z-index: 1;
+    height: 100%;
   }
   </style>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js">
-  </script>
-  <script type="text/javascript">
-    function divToFit() {
-      var $body = $(this.ie6 ? document.body : document);
-      $('#box_1').css({height: $body.height()});
-    }
-    $(document).ready(function(){
-      divToFit();
-      $(window).resize(function() {
-       divToFit();
-     });
-   });
- </script>
  <!-- 베너 -->
   <style type="text/css">
     .banner {
@@ -145,7 +128,9 @@
 </head>
 <body>
 <!-- 배경이미지 -->
-  <div id="box_1" class="box"></div>
+  <div id="box_1">
+    <img src="ppurifyy.github.io/image/topnavbg1.jpg">
+  </div>
 <!-- 베너 -->
   <div>
     <a href="#">
