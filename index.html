@@ -16,21 +16,10 @@
       overflow: scroll;
       margin: 0;
       padding: 0;
-
     }
   </style>
-<!-- 배경이미지 -->
-  <style type="text/css">
-  .image{
-            height: 726px;
-            background: url(ppurifyy.github.io/image/topnavbg1.jpg) no-repeat center center; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            background-position: center;
-        }
-  </style>
+ <!-- 메인페이지 로드 -->
+ <link rel="index" type="text/css" href="ppurifyy.github.io/layout/mainpage.html">
  <!-- 베너 -->
   <style type="text/css">
     .banner {
@@ -105,34 +94,8 @@
     	color: #D5D5D5;
     }
   </style>
-<!-- 스크롤 -->
-  <style type="text/css">
-    .scroll { 
-      visibility: visible; 
-      color: white;
-      position: fixed;
-      z-index: 10;
-      bottom: 20px;
-      width: 100%;
-      text-align:center;
-      font-size: 12px;
-    }
-    .scroll.shown { visibility: hidden; }
-    }
-  </style>
-  <script type="text/javascript">
-    window.addEventListener('scroll', function() {
-  var el = document.querySelector('.scroll');
-  
-  if(window.scrollY >= 400) el.classList.add('shown');
-  else el.classList.remove('shown');
-});
-  </script>
 </head>
 <body>
-<!-- 배경이미지 -->
-  <div class="image"`>
-    </div>
 <!-- 베너 -->
   <div>
     <a href="#">
@@ -156,11 +119,5 @@
         <a class="MenuLink" href="/about/"> ABOUT </a></li>
     </ul>
   </nav>
-<!-- 스크롤 -->
-  <div class="scroll">
-    SCROLL DOWN 
-    <li>&#8744; 
-  </div>
-<!-- 최신게시글 -->
   </body>
 </html>
